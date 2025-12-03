@@ -1,6 +1,10 @@
 import fs from "fs";
 
-const banks = fs.readFileSync("input.txt", "utf-8").trim().split("\n");
+const banks = fs
+  .readFileSync("input.txt", "utf-8")
+  .replace(/\r/g, "")
+  .trim()
+  .split("\n");
 let total = 0;
 for (const bank of banks) {
   const length = bank.length;
