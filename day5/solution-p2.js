@@ -5,7 +5,7 @@ const input = fs
   .replace(/\r/g, "")
   .split("\n\n");
 
-let total = 0;
+let total = 0 ;
 
 let ranges = input[0]
   .split("\n")
